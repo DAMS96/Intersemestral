@@ -1,11 +1,38 @@
-This is a working example of a multi-container flask application with postgres, mongo and redis as the database fronted by the nginx reverse proxy.
+## Comandos
 
-## Usage
-
-1. Bring up the cluster
+1. Arrancar el Cluster
 ```bash
 $ docker-compose up -d
 ```
 
-3. Browse to localhost:8181 to see the app in action.
-2. Browse to localhost:5151 to see the postgres manager.
+2. Ingresar a localhost:8181 para visualizar la Aplicacion.
+
+3. MongoDB ID Container
+```bash
+$ sudo docker ps 
+```
+
+4. Arrancar Container de MongoDB
+```bash
+$ sudo docker exec -it ID_Container bash
+```
+
+5. Ingresar a Mongo
+```bash
+#Mongo
+```
+
+6. Ingresar a BD
+```bash
+>>use testdb
+```
+
+7. Consultar Colecciones en MongoDB
+```bash
+>>show collections
+```
+
+6. Consultar datos en MongoBD
+```bash
+>>db.users.find()
+```
